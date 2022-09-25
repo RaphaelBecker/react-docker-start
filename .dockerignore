@@ -1,4 +1,4 @@
-finwatch-landing/node_modules
+node_modules
 Dockerfile
 .git
 .gitignore

@@ -57,5 +57,11 @@ docker exec -it ract-app bash
 bind mount: Sync specified folders inside the docker container
 
 ```
-docker run -v dirlocaldirectory:containerdirectory - d- p 3000:3000 --name react-app react-image
+docker run -d -v ${pwd}\src:/app/src -p 3000:3000 --name docker-container docker-image
+```
+
+Only WIndows issues:
+
+```
+docker run -e CHOKIDAR_USEPOLLING=true -v "$(pwd)\src:/app/src:ro" -d -p 3000:3000--name page fw-landingpage
 ```
