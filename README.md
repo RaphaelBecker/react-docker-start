@@ -13,7 +13,7 @@ docker build -t react-image .
 run an image:
 
 ```
-docker run run command:
+docker run
 ```
 
 specifiy
