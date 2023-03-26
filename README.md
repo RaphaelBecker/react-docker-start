@@ -54,7 +54,13 @@ starts a bash terminal inside the docker container. -it means interactive, exec 
 docker exec -it ract-app bash
 ```
 
-bind mount: Sync specified folders inside the docker container
+bind mount: Sync specified folders inside the docker container (CMD WINDOWS)
+
+```
+docker run -d -v %cd%\src:/app/src -p 3000:3000 --name docker-container docker-image
+```
+
+bind mount: Sync specified folders inside the docker container (power shell)
 
 ```
 docker run -d -v ${pwd}\src:/app/src -p 3000:3000 --name docker-container docker-image
